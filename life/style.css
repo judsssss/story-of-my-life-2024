@@ -122,12 +122,33 @@ p{
     justify-content: center;
     align-items: center;
 }
+.pics3{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color);
+    position: relative;
+    overflow:hidden;
+}
+.pics3 img{
+    object-fit: cover;   
+    opacity: 0; /* Hide image */
+    transition: opacity 0.5s ease-in-out;
+}
+.pics3:hover img {
+    opacity: 1; /* Show image */
+}
+
+
 footer{
     font-family: "Oswald", serif;
     font-size: 2rem;
     text-align: center;
     color: var(--accent-color);
 }
+
 
 @keyframes appear {
     from{
