@@ -135,9 +135,10 @@ p{
 .pics3 img{
     object-fit: cover;   
     opacity: 0; /* Hide image */
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1s;
 }
 .pics3:hover img {
+    transition: 5s ease-in-out;
     opacity: 1; /* Show image */
 }
 
