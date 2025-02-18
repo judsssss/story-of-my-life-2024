@@ -1,1 +1,1 @@
-https://mylife-2024.netlify.app
+https://mylife2024.netlify.app/
