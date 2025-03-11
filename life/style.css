@@ -87,6 +87,9 @@ h3{
     box-shadow: 5px 5px 15px 3px  var(--accent-color) ;
     justify-content: center;
     align-items: center;
+    background-image: url("./img/cat.jpg");
+    background-repeat: repeat;
+    background-position: center;
 }
 .pics{
     display: flex;
@@ -152,7 +155,6 @@ p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .img1{
