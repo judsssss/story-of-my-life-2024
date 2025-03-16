@@ -23,8 +23,6 @@ body{
 
 header{
     background-color: rgba(16, 16, 16, 0.5);
-    
-  
 }
 
 .header-nav{
@@ -58,6 +56,48 @@ header{
 }
 .nav-bar ul, li a:hover{
     color: var(--primary-color);
+}
+
+ul li {
+    position: relative;
+}
+
+/* Dropdown Menu */
+ul li ul.drop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background-color: rgba(49, 156, 181, .7);
+    z-index: 999;
+    display: none;
+    border-radius: 5px;
+}
+
+/* Make dropdown visible on hover */
+ul li:hover ul.drop {
+    display: block;
+}
+
+/* Dropdown Item Styling */
+ul li ul.drop li {
+    display: block;
+    width: 100%;
+}
+
+ul li ul.drop li a {
+    color: var(--bg-color);
+    display: block;
+    font-size: 0.6em;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+/* Hover effect for dropdown links */
+ul li ul.drop li a:hover {
+    color: var(--accent-color);
+    
 }
 
 .content,.hcontent{
@@ -227,4 +267,9 @@ section{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+}
+
+.icon{
+    cursor: pointer;
+    align-items: center;
 }
