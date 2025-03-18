@@ -106,12 +106,42 @@ ul li ul.drop li a:hover {
     color: var(--accent-color);
     display: inline-block;
 }
+@supports (background-clip: text) or (-webkit-background-clip: text){
 h1{
     font-family: "Oswald", serif;
-    font-size: 3rem;
+    font-size: clamp(3em, 6vw + 1rem, 5rem);
     text-align: center;
     margin-bottom: 2rem;
+    text-transform: capitalize;
+
+    background-image: linear-gradient(
+        to right,
+        #071952,
+        #0B666A,
+        #97FEED,
+        #0B666A,
+        #071952,
+        #35A29F,
+        #97FEED,
+        #0B666A,
+        #071952
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size:200%;
+    animation: animate 2s steps(5) infinite;
+    animation: animate 2s linear infinite;
 }
+}
+@keyframes animate{
+    from{
+        background-position: 0;
+    }to{
+        background-position: 200%;
+    }
+}
+
 h3{
     font-family: "Oswald", serif;
     font-size: 2rem;
